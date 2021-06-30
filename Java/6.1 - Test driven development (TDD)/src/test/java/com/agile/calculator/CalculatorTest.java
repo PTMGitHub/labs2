@@ -12,6 +12,14 @@ public class CalculatorTest {
 	private Calculator calculator;
 
 	@Test
+	public void emptyStringTest() {
+		calculator = new Calculator();
+		int expected = 0;
+		int actual = calculator.subtract("");
+		assertEquals(expected, actual);
+	}
+
+	@Test
 	public void subtractTest() {
 		calculator = new Calculator();
 		int expected = 2;

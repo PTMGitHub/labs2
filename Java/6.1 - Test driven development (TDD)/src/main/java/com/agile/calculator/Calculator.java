@@ -39,6 +39,8 @@ public class Calculator {
 		for(String number : numbers) {
 			if(!Utils.isNumeric(number)) {  // check number is valid
 				return result;
+			} else {
+				return 0;
 			}
 		}
 		result = Utils.toNumber(numbers[0]) - Utils.toNumber(numbers[1]);
